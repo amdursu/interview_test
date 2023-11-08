@@ -21,7 +21,11 @@ const dbClient: DynamoDBClient = new DynamoDBClient(config.AWS_REMOTE_CONFIG);
 const app: Express = express();
 
 app.use(bodyParser.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: 'http://localhost:4001',
+};
+app.use(cors(corsOptions));
 
 app.get('/api/login', async (req: Request, res: Response) => {
   try {
@@ -81,7 +85,7 @@ app.get(
   },
 );
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
