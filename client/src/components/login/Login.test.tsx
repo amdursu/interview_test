@@ -1,8 +1,7 @@
 /* eslint-disable testing-library/render-result-naming-convention */
-import { fireEvent, render, waitFor } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import Login from './Login';
 import { BrowserRouter } from 'react-router-dom';
-import React, { Dispatch } from 'react';
 
 const mockedUsedNavigate = jest.fn();
 

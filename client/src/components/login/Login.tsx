@@ -8,7 +8,6 @@ import { LoginProps } from '../../models/LoginProps';
 import './Login.scss';
 import { useState } from 'react';
 import config from '../../config';
-import { User } from '../../models/User';
 import { APIResponse } from '../../models/APIResponse';
 
 function Login({ isLoggedIn, setIsLoggedIn }: LoginProps) {

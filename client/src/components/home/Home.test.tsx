@@ -1,7 +1,7 @@
 /* eslint-disable testing-library/render-result-naming-convention */
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Home from './Home';
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 const mockedUsedNavigate = jest.fn();
 
